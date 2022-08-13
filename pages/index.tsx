@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { H1 } from '@blueprintjs/core'
 import Snippet, { choice, CustomPlaceholder, Placeholder, Text } from '../components/Snippet'
 import Wrapper from '../components/Wrapper'
@@ -82,7 +83,7 @@ const Home = (): JSX.Element => {
       <Snippet command="ffmpeg" name="extract a frame from a video">
         <Text>ffmpeg -i </Text>
         <Placeholder name="input file" />
-        <Text> -vf &quot;select=eq(n\,</Text>
+        <Text> -vf "select=eq(n\,</Text>
         <CustomPlaceholder
           name="frame"
           inputs={{
@@ -113,7 +114,7 @@ const Home = (): JSX.Element => {
             }
           }}
         />
-        <Text>)&quot; -vframes 1 </Text>
+        <Text>)" -vframes 1 </Text>
         <Placeholder name="output file" />
       </Snippet>
 
